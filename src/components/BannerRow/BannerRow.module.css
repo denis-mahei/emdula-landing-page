@@ -1,0 +1,30 @@
+.bannerWrapper {
+    overflow: hidden;
+    width: 100%;
+    background: var(--white-1000);
+}
+
+.banners {
+    display: flex;
+    gap: 40px;
+    width: max-content; /* щоб блок займав ширину всіх банерів */
+    animation: slide-left 20s linear infinite;
+}
+
+.bannerItem {
+    width: 200px;
+    height: 80px;
+    border-radius: 10px;
+    background: var(--light-background);
+    flex: 0 0 auto; /* щоб елементи не стискались */
+}
+
+
+@keyframes slide-left {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-50%); /* зміщення на половину ширини контейнера для повторення */
+    }
+}

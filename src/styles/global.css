@@ -1,0 +1,57 @@
+:root {
+  --primary-400: #17624d;
+  --primary-300: #138356;
+  --primary-200main: #0aae6c;
+  --primary-100: #0ad282;
+  --primary-50: #29ed9e;
+  --secondary-1000: #0c111f;
+  --secondary-750: rgba(12, 17, 31, 0.75);
+  --secondary-500: rgba(12, 17, 31, 0.5);
+  --secondary-250: rgba(12, 17, 31, 0.25);
+  --white-1000: #f3f0f0;
+  --white-750: rgba(243, 240, 240, 0.75);
+  --white-500: rgba(243, 240, 240, 0.5);
+  --white-250: rgba(243, 240, 240, 0.25);
+  --grey-100: #d1d2d5;
+  --grey-200: #9d9ea4;
+  --grey-300: #6c6e7d;
+  --grey-400: #494c61;
+  --grey-500: #3a3d52;
+  --light-background: #d7dce1;
+  --green-small-carts: #b6ffca;
+  --green-carts: rgba(18, 242, 199, 0.2);
+  --header: rgba(0, 0, 0, 0.25);
+
+  font-family: "Inter", sans-serif;
+}
+
+*,
+::after,
+::before {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+a {
+  text-decoration: none;
+}
+
+body {
+  line-height: 1.5;
+  background-color: var(--light-background);
+  color: var(--white-1000);
+  height: 100vh;
+}
+.container {
+  max-width: 1266px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+.inner_container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+section {
+  padding: 64px 0;
+}

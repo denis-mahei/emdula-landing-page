@@ -1,0 +1,109 @@
+*,
+::before,
+::after {
+    box-sizing: border-box;
+}
+
+html {
+    font-family:
+            system-ui,
+            'Segoe UI',
+            Roboto,
+            Helvetica,
+            Arial,
+            sans-serif,
+            'Apple Color Emoji',
+            'Segoe UI Emoji'; /* 1 */
+
+    line-height: 1.15; /* 2 */
+    -webkit-text-size-adjust: 100%; /* 3 */
+    tab-size: 4; /* 4 */
+}
+b,
+strong {
+    font-weight: bolder;
+}
+
+/**
+1. Improve consistency of default fonts in all browsers. (https://github.com/sindresorhus/modern-normalize/issues/3)
+2. Correct the odd 'em' font sizing in all browsers.
+*/
+
+code,
+kbd,
+samp,
+pre {
+    font-family:
+            ui-monospace,
+            SFMono-Regular,
+            Consolas,
+            'Liberation Mono',
+            Menlo,
+            monospace; /* 1 */
+    font-size: 1em; /* 2 */
+}
+body {
+    margin: 0;
+}
+ul,
+ul[class],
+ol {
+    list-style: none;
+    padding-left: 0;
+    margin: 0;
+}
+a {
+    text-decoration: none;
+    color: inherit;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    padding: 0;
+    margin: 0;
+}
+button,
+input,
+optgroup,
+select,
+textarea {
+    font-family: inherit; /* 1 */
+    font-size: 100%; /* 1 */
+    line-height: 1.15; /* 1 */
+    margin: 0; /* 2 */
+}
+button,
+[type='button'],
+[type='reset'],
+[type='submit'] {
+    -webkit-appearance: button;
+}
+:focus {
+    outline: none;
+}
+:focus-visible {
+    outline: 2px solid #2684ff;
+    outline-offset: 2px;
+}
+input[type='search'] {
+    -webkit-appearance: none;
+    outline-offset: -2px;
+}
+input,
+button,
+textarea,
+select {
+    touch-action: manipulation;
+}
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+svg {
+    display: block;
+}
