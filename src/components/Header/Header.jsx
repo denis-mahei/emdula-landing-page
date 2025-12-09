@@ -1,37 +1,35 @@
 import Button from "../Button/Button.jsx";
 
-import css from "./Header.module.css";
-
 const Header = () => {
   return (
-    <header className={css.header}>
+    <header className='w-full absolute backdrop-blur-sm shadow-header bg-header'>
       <div className="container inner_container">
         <div>
-          <img src="../../../public/icons/logo.png" alt="logo" />
+          <img src="/icons/logo.png" alt="logo" />
         </div>
-        <ul className={css.menuList}>
-          <li className={css.menuListItem}>
-            <a href="#" className={css.menuLink}>
+        <ul className='flex gap-9 [&_li]:py-8 [&]'>
+          <li>
+            <a href="#" className='menuLink'>
               Products
             </a>
           </li>
-          <li className={css.menuListItem}>
-            <a href="#" className={css.menuLink}>
+          <li>
+            <a href="#" className='menuLink'>
               About Us
             </a>
           </li>
-          <li className={css.menuListItem}>
-            <a href="#" className={css.menuLink}>
+          <li>
+            <a href="#" className='menuLink'>
               Data & Security
             </a>
           </li>
-          <li className={css.menuListItem}>
-            <a href="#" className={css.menuLink}>
+          <li>
+            <a href="#" className='menuLink'>
               Teams
             </a>
           </li>
-          <li className={css.menuListItem}>
-            <a href="#" className={css.menuLink}>
+          <li>
+            <a href="#" className='menuLink'>
               Contact
             </a>
           </li>

@@ -1,8 +1,8 @@
 import Header from "./components/Header/Header.jsx";
 import Hero from "./components/Hero/Hero.jsx";
 import BannerRow from "./components/BannerRow/BannerRow.jsx";
-import "./App.css";
 import OurVision from "./components/OurVision/OurVision.jsx";
+import HowWorks from "./components/HowWorks/HowWorks.jsx";
 
 function App() {
   return (
@@ -11,6 +11,7 @@ function App() {
       <Hero />
       <BannerRow />
       <OurVision />
+      <HowWorks />
     </>
   );
 }

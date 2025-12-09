@@ -2,36 +2,36 @@ import css from "./OurVision.module.css";
 import Icon from "../Icon/Icon.jsx";
 const OurVision = () => {
   return (
-    <section>
+    <section className="bg-light-background">
       <div className="container">
-        <div className={css.innerSection}>
-          <h3 className={css.title}>Our vision and what we build</h3>
-          <ul className={css.list}>
-            <li className={css.listItem}>
+        <div className='rounded-xl bg-white-1000 p-10 shadow-[0_0_0_0_rgba(0,0,0,0),0_0_0_0_rgba(0,0,0,0),0_1px_2px_0_rgba(0,0,0,0.05)]'>
+          <h3 className='text-center text-secondary-1000 text-5xl font-medium mb-17'>Our vision and what we build</h3>
+          <ul className='flex gap-14 [&_li]:bg-green-small-carts [&_li]:rounded-xl [&_li]:p-[34px_24px_24px]'>
+            <li className=''>
               <div className={css.iconBg}>
                 <Icon name="diagram-s" />
               </div>
-              <h4 className={css.listTitle}>A smarter way to run operations</h4>
+              <h3 className={css.listTitle}>A smarter way to run operations</h3>
               <p className={css.listText}>
                 We design modern, AI-ready systems that simplify daily processes
                 and remove the friction created by outdated tools.
               </p>
             </li>
-            <li className={css.listItem}>
+            <li>
               <div className={css.iconBg}>
                 <Icon name="oper-platform-s" />
               </div>
-              <h4 className={css.listTitle}>Modern operations platform</h4>
+              <h3 className={css.listTitle}>Modern operations platform</h3>
               <p className={css.listText}>
                 Our platform connects clients, assets and workflows in one
                 place. It keeps operations organized and easy to manage
               </p>
             </li>
-            <li className={css.listItem}>
+            <li>
               <div className={css.iconBg}>
                 <Icon name="smart-crm-s" />
               </div>
-              <h4 className={css.listTitle}>Smart CRM for service teams</h4>
+              <h3 className={css.listTitle}>Smart CRM for service teams</h3>
               <p className={css.listText}>
                 We create CRM tools for salons and service companies.
                 Scheduling, clients and daily tasks in one system.

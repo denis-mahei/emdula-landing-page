@@ -1,0 +1,88 @@
+@import 'tailwindcss';
+
+@theme {
+  --font-display: "Inter", sans-serif;
+  --color-grad-dark: #131B25;
+  --color-grad-light: #063a3a;
+  --color-primary-400: #17624d;
+  --color-primary-300: #138356;
+  --color-primary-200main: #0aae6c;
+  --color-primary-100: #0ad282;
+  --color-primary-50: #29ed9e;
+  --color-secondary-1000: #0c111f;
+  --color-secondary-750: rgba(12, 17, 31, 0.75);
+  --color-secondary-500: rgba(12, 17, 31, 0.5);
+  --color-secondary-250: rgba(12, 17, 31, 0.25);
+  --color-white-1000: #f3f0f0;
+  --color-white-750: rgba(243, 240, 240, 0.75);
+  --color-white-500: rgba(243, 240, 240, 0.5);
+  --color-white-250: rgba(243, 240, 240, 0.25);
+  --color-gray-100: #d1d2d5;
+  --color-gray-200: #9d9ea4;
+  --color-gray-300: #6c6e7d;
+  --color-gray-400: #494c61;
+  --color-gray-500: #3a3d52;
+  --color-light-background: #d7dce1;
+  --color-green-small-carts: #b6ffca;
+  --color-green-carts: rgba(18, 242, 199, 0.2);
+  --color-header: rgba(0, 0, 0, 0.25);
+  --shadow-header: 0 20px 14px 0 rgba(21, 20, 24, 0.4);
+  --shadow-button: inset 5px 6px 4px 0 rgba(12, 17, 31, 0.3);
+}
+
+body {
+  @apply font-display h-screen
+}
+
+@layer utilities {
+  .container {
+    @apply max-w-[1266px] px-4 m-auto
+
+  }
+  .inner_container {
+    @apply flex items-center justify-between
+
+  }
+  section {
+    @apply py-16
+  }
+}
+.menuLink {
+  @apply font-normal text-xs leading-[1.3] text-white relative transition-colors duration-200;
+}
+
+.menuLink:hover {
+  @apply text-primary-50;
+}
+
+.menuLink::after {
+  content: '';
+  @apply absolute left-0 bottom-[-5px] w-full h-0.5 bg-primary-50;
+  transform: scaleX(0);
+  transform-origin: right;
+  transition: transform 0.3s;
+}
+
+.menuLink:hover::after {
+  transform: scaleX(1);
+  transform-origin: left;
+}
+.btn-base {
+  @apply py-3 px-4.5 min-w-28 text-white-1000 font-display rounded-full font-medium transition-all duration-200;
+}
+.btn-primary{
+  @apply bg-primary-200main hover:bg-primary-300 active:bg-primary-400 active:shadow-button;
+}
+.btn-secondary{
+  @apply font-display font-medium text-primary-200main border-2 border-primary-200main rounded-full bg-secondary-1000 hover:border-primary-300 hover:text-primary-300 active:text-primary-400 active:border-primary-400
+}
+
+/* sizes */
+
+.normal {
+  @apply text-[14px]
+}
+
+.large {
+  @apply text-[18px] py-4 px-12 leading-1.5 min-h-14
+}

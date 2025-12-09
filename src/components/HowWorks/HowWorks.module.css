@@ -1,0 +1,50 @@
+.howWorksSection {
+    background: var(--secondary-1000);
+}
+.title {
+    font-weight: 500;
+    font-size: 48px;
+    line-height: 1.16667;
+    letter-spacing: -0.02em;
+    color: var(--white-1000);
+    text-align: center;
+    margin-bottom: 40px;
+}
+.aboutList {
+    display: flex;
+    flex-direction: column;
+    gap: 48px;
+}
+.cartList li {
+    border-radius: 0 20px 20px 0;
+    display: flex;
+    height: 425px;
+}
+.cartItemGreen {
+    background: var(--primary-200main);
+    padding: 48px 80px;
+    width: 638px;
+    height: 320px;
+}
+.cartItemGreenInner {
+    background: var(--secondary-250);
+    width: 478px;
+}
+.cartItemText {
+    background: var(--green-carts);
+    padding: 50px;
+}
+.cartItemText h5 {
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 1.18;
+    color: var(--white-1000);
+    margin-bottom: 16px;
+}
+.cartItemText p {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.5;
+    color: var(--grey-200);
+    margin-bottom: 16px;
+}

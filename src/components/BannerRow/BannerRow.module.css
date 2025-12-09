@@ -7,7 +7,7 @@
 .banners {
     display: flex;
     gap: 40px;
-    width: max-content; /* щоб блок займав ширину всіх банерів */
+    width: max-content; 
     animation: slide-left 20s linear infinite;
 }
 
@@ -15,8 +15,12 @@
     width: 200px;
     height: 80px;
     border-radius: 10px;
-    background: var(--light-background);
-    flex: 0 0 auto; /* щоб елементи не стискались */
+    background: var(--color-secondary-1000);
+    flex: 0 0 auto; 
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 
@@ -25,6 +29,6 @@
         transform: translateX(0);
     }
     100% {
-        transform: translateX(-50%); /* зміщення на половину ширини контейнера для повторення */
+        transform: translateX(-50%); 
     }
 }
