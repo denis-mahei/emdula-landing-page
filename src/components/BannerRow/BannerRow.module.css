@@ -1,7 +1,7 @@
 .bannerWrapper {
     overflow: hidden;
     width: 100%;
-    background: var(--white-1000);
+    background: var(--color-white-1000);
 }
 
 .banners {
