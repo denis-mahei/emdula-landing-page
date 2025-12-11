@@ -95,7 +95,7 @@ const CRMSolutions = () => {
             </div>
             <img
               className="absolute z-10 bottom-0 right-0 translate-x-[20%] translate-y-[12%]"
-              src="../../assets/images/illustration.webp"
+              src="/images/illustration.webp"
               alt="illustration"
             />
           </div>
