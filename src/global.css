@@ -67,6 +67,9 @@ body {
   transform: scaleX(1);
   transform-origin: left;
 }
+
+/*Button Style*/
+
 .btn-base {
   @apply py-3 px-4.5 min-w-28 text-white-1000 font-display rounded-full font-medium transition-all duration-200;
 }
@@ -77,7 +80,7 @@ body {
   @apply font-display font-medium text-primary-200main border-2 border-primary-200main rounded-full bg-secondary-1000 hover:border-primary-300 hover:text-primary-300 active:text-primary-400 active:border-primary-400
 }
 
-/* sizes */
+/* sizes4Button */
 
 .normal {
   @apply text-[14px]
@@ -85,4 +88,42 @@ body {
 
 .large {
   @apply text-[18px] py-4 px-12 leading-1.5 min-h-14
+}
+
+/*Animation*/
+
+@keyframes scroll-top-to-bottom {
+  0% {
+    transform: translateY(0);
+  }
+
+  100% {
+    transform: translateY(-50%);
+  }
+}
+
+/* Define keyframes for the bottom-to-top scroll animation */
+@keyframes scroll-bottom-to-top {
+  0% {
+    transform: translateY(-50%);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
+}
+
+/* Class to apply the top-to-bottom animation */
+.animate-scroll-t2b {
+  animation: scroll-top-to-bottom 60s linear infinite;
+}
+
+/* Class to apply the bottom-to-top animation */
+.animate-scroll-b2t {
+  animation: scroll-bottom-to-top 60s linear infinite;
+}
+
+/* Utility class to pause the animation on hover */
+.group:hover .group-hover-pause {
+  animation-play-state: paused;
 }

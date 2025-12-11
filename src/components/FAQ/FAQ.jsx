@@ -10,7 +10,7 @@ const FAQ = () => {
           Frequently Asked Questions
         </h4>
         <div className='flex flex-col'>
-            <Accordion title="What is Emdula?" content="Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim, ullam!"/>
+            <Accordion title="What is Emdula?" content="Lorem ipsum dolor sit amet, consectetur adipiscing elit. aliquam diam sagittis sagittis ullamcorper. Lorem ipsum dolor sit amet, consectetur adipiscing elit. aliquam. Lorem ipsum dolor sit amet, consectetur adipiscing elit. aliquam diam sagittis sagittis ullamcorper. Lorem ipsum dolor sit amet, consectetur adipiscing elit. aliquam."/>
             <Accordion title="What is RealECon?" content="Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim, ullam!"/>
             <Accordion title="Who are your solutions for?" content="Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim, ullam!"/>
             <Accordion title="Do your systems integrate with our existing tools?" content="Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim, ullam!"/>

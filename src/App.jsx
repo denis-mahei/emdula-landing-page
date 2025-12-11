@@ -1,12 +1,13 @@
-import Header from "./components/Header/Header.jsx";
-import Hero from "./components/Hero/Hero.jsx";
-import BannerRow from "./components/BannerRow/BannerRow.jsx";
-import OurVision from "./components/OurVision/OurVision.jsx";
-import HowWorks from "./components/HowWorks/HowWorks.jsx";
-import AIProposition from "./components/AIProposition/AIProposition.jsx";
-import CRMSolutions from "./components/CRMSolutions/CRMSolutions.jsx";
-import Teams from "./components/Teams/Teams.jsx";
-import FAQ from "./components/FAQ/FAQ.jsx";
+import Header from './components/Header/Header.jsx';
+import Hero from './components/Hero/Hero.jsx';
+import BannerRow from './components/BannerRow/BannerRow.jsx';
+import OurVision from './components/OurVision/OurVision.jsx';
+import HowWorks from './components/HowWorks/HowWorks.jsx';
+import Quotation from './components/Quotation/Quotation.jsx';
+import CRMSolutions from './components/CRMSolutions/CRMSolutions.jsx';
+import Teams from './components/Teams/Teams.jsx';
+import FAQ from './components/FAQ/FAQ.jsx';
+import Review from './components/Review/Review.jsx';
 
 function App() {
   return (
@@ -16,10 +17,11 @@ function App() {
       <BannerRow />
       <OurVision />
       <HowWorks />
-      <AIProposition/>
-      <CRMSolutions/>
-      <Teams/>
-      <FAQ/>
+      <Quotation />
+      <CRMSolutions />
+      <Teams />
+      <FAQ />
+      <Review />
     </>
   );
 }
