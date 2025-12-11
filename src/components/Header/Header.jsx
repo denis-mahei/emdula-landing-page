@@ -1,35 +1,35 @@
-import Button from "../Button/Button.jsx";
+import Button from '../Button/Button.jsx';
 
 const Header = () => {
   return (
-    <header className='w-full absolute backdrop-blur-sm shadow-header bg-header'>
+    <header className="w-full fixed z-40 backdrop-blur-sm shadow-header bg-header">
       <div className="container inner_container">
-        <div>
-          <img src="/icons/logo.png" alt="logo" />
-        </div>
-        <ul className='flex gap-9 [&_li]:py-8 [&]'>
+        <a href="/" className="transition-transform hover:scale-110">
+          <img src="/icons/logo.png" alt="Emdula logo" />
+        </a>
+        <ul className="flex gap-9 [&_li]:py-8 [&]">
           <li>
-            <a href="#" className='menuLink'>
+            <a href="#products" className="menuLink">
               Products
             </a>
           </li>
           <li>
-            <a href="#" className='menuLink'>
+            <a href="#about" className="menuLink">
               About Us
             </a>
           </li>
           <li>
-            <a href="#" className='menuLink'>
+            <a href="#our-vision" className="menuLink">
               Data & Security
             </a>
           </li>
           <li>
-            <a href="#" className='menuLink'>
+            <a href="#teams" className="menuLink">
               Teams
             </a>
           </li>
           <li>
-            <a href="#" className='menuLink'>
+            <a href="#contact" className="menuLink">
               Contact
             </a>
           </li>

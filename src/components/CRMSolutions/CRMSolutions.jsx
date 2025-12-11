@@ -1,5 +1,3 @@
-import Button from '../Button/Button';
-
 const CRMSolutions = () => {
   return (
     <section className="bg-secondary-1000">
@@ -96,7 +94,7 @@ const CRMSolutions = () => {
               </button>
             </div>
             <img
-              className="absolute z-10 bottom-0 right-0 translate-x-[25%] translate-y-[12%]"
+              className="absolute z-10 bottom-0 right-0 translate-x-[20%] translate-y-[12%]"
               src="./src/assets/images/illustration.webp"
               alt="illustration"
             />

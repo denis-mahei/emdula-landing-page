@@ -2,7 +2,7 @@ import Accordion from '../Accordion/Accordion';
 
 const FAQ = () => {
   return (
-    <section className="bg-secondary-1000">
+    <section className="bg-secondary-1000" id="about">
       <div className="container">
         <h4 className="font-medium text-center text-5xl leading-14 text-white-1000 mb-10">
           Frequently Asked Questions

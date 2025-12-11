@@ -2,7 +2,7 @@ import Icon from '../Icon/Icon';
 
 const HowWorks = () => {
   return (
-    <section className="bg-secondary-1000">
+    <section className="bg-secondary-1000" id="products">
       <div className="container">
         <h4 className="font-medium text-center text-5xl mb-10">
           How Emdula works across your operations

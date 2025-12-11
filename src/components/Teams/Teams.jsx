@@ -2,12 +2,13 @@ import Icon from '../Icon/Icon';
 
 const Teams = () => {
   return (
-    <section>
+    <section id="teams">
       <div className="container">
         <h4 className="font-medium text-5xl text-secondary-1000 mb-10 text-center">
           Why teams trust Emdula
         </h4>
-        <ul className="flex flex-wrap gap-6 
+        <ul
+          className="flex flex-wrap gap-6 
                [&_li]:w-[calc(33.333%-16px)] 
                [&_li]:py-7.5
                [&_li]:px-6
@@ -21,12 +22,11 @@ const Teams = () => {
                [&_li_p:first-of-type]:mt-5 
                [&_li_p:first-of-type]:mb-3
                [&_li_p:last-of-type]:text-[15px] 
-               [&_li_p:last-of-type]:leading-6">
+               [&_li_p:last-of-type]:leading-6"
+        >
           <li>
             <Icon name="teams" size={60} />
-            <p>
-              Built with industry teams
-            </p>
+            <p>Built with industry teams</p>
             <p>
               Our systems are built with real operators, ensuring every feature
               solves a true operational need.

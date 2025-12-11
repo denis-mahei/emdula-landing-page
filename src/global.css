@@ -31,6 +31,10 @@
   --shadow-button: inset 5px 6px 4px 0 rgba(12, 17, 31, 0.3);
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   @apply font-display h-screen bg-light-background text-white-1000;
 }
