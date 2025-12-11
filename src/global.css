@@ -1,8 +1,8 @@
 @import 'tailwindcss';
 
 @theme {
-  --font-display: "Inter", sans-serif;
-  --color-grad-dark: #131B25;
+  --font-display: 'Inter', sans-serif;
+  --color-grad-dark: #131b25;
   --color-grad-light: #063a3a;
   --color-primary-400: #17624d;
   --color-primary-300: #138356;
@@ -17,6 +17,7 @@
   --color-white-750: rgba(243, 240, 240, 0.75);
   --color-white-500: rgba(243, 240, 240, 0.5);
   --color-white-250: rgba(243, 240, 240, 0.25);
+  --color-light-gray: #b6b6b6;
   --color-gray-100: #d1d2d5;
   --color-gray-200: #9d9ea4;
   --color-gray-300: #6c6e7d;
@@ -31,31 +32,36 @@
 }
 
 body {
-  @apply font-display h-screen bg-light-background text-white-1000
+  @apply font-display h-screen bg-light-background text-white-1000;
 }
 
 @layer utilities {
   .container {
-    @apply max-w-[1266px] px-4 m-auto
-
+    @apply max-w-[1266px] px-4 m-auto;
   }
   .inner_container {
-    @apply flex items-center justify-between
-
+    @apply flex items-center justify-between;
   }
   section {
-    @apply py-16
+    @apply py-16;
   }
 }
+/*Navbar Style*/
 .menuLink {
   @apply font-normal text-xs leading-[1.3] text-white relative transition-colors duration-200;
 }
 
-.menuLink:hover {
+.footerLink {
+  @apply text-[18px] leading-7 text-gray-200 transition-colors relative duration-200;
+}
+
+.menuLink:hover,
+.footerLink:hover {
   @apply text-primary-50;
 }
 
-.menuLink::after {
+.menuLink::after,
+.footerLink::after {
   content: '';
   @apply absolute left-0 bottom-[-5px] w-full h-0.5 bg-primary-50;
   transform: scaleX(0);
@@ -63,31 +69,33 @@ body {
   transition: transform 0.3s;
 }
 
-.menuLink:hover::after {
+.menuLink:hover::after,
+.footerLink:hover::after{
   transform: scaleX(1);
   transform-origin: left;
 }
+
 
 /*Button Style*/
 
 .btn-base {
   @apply py-3 px-4.5 min-w-28 text-white-1000 font-display rounded-full font-medium transition-all duration-200;
 }
-.btn-primary{
+.btn-primary {
   @apply bg-primary-200main hover:bg-primary-300 active:bg-primary-400 active:shadow-button;
 }
-.btn-secondary{
-  @apply font-display font-medium text-primary-200main border-2 border-primary-200main rounded-full bg-secondary-1000 hover:border-primary-300 hover:text-primary-300 active:text-primary-400 active:border-primary-400
+.btn-secondary {
+  @apply font-display font-medium text-primary-200main border-2 border-primary-200main rounded-full bg-secondary-1000 hover:border-primary-300 hover:text-primary-300 active:text-primary-400 active:border-primary-400;
 }
 
 /* sizes4Button */
 
 .normal {
-  @apply text-[14px]
+  @apply text-[14px];
 }
 
 .large {
-  @apply text-[18px] py-4 px-12 leading-1.5 min-h-14
+  @apply text-[18px] py-4 px-12 leading-1.5 min-h-14;
 }
 
 /*Animation*/
@@ -102,7 +110,6 @@ body {
   }
 }
 
-/* Define keyframes for the bottom-to-top scroll animation */
 @keyframes scroll-bottom-to-top {
   0% {
     transform: translateY(-50%);
@@ -113,17 +120,28 @@ body {
   }
 }
 
-/* Class to apply the top-to-bottom animation */
+@keyframes slide-left {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+.animate-slide-left {
+  animation: slide-left 20s linear infinite;
+}
+
 .animate-scroll-t2b {
   animation: scroll-top-to-bottom 60s linear infinite;
 }
 
-/* Class to apply the bottom-to-top animation */
+
 .animate-scroll-b2t {
   animation: scroll-bottom-to-top 60s linear infinite;
 }
 
-/* Utility class to pause the animation on hover */
+
 .group:hover .group-hover-pause {
   animation-play-state: paused;
 }
